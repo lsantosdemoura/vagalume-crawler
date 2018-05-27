@@ -4,7 +4,7 @@ Python 3.5.3
 
 ##Objetivo
 ---
-Crawler do site www.vagalume.com, apresenta uma lista de músicas baseada no artista que o usuário inserir ou a letra da música especificada pelo usuario,  também sendo possível exportá-las para um arquivo de texto.
+Crawler do site www.vagalume.com, apresenta uma lista de músicas baseada no artista que o usuário inserir ou a letra da música especificada pelo usuário,  também sendo possível exportá-las para um arquivo de texto.
 
 ##Instalação
 ---
@@ -92,8 +92,6 @@ Zwitter
 
 Deseja exportar para txt? (s/n):
 n`
-Para retornar a letra de uma música:
-`$ python vagalume.py 'pink floyd' -m 'another brick in the wall'`
 
 Help do programa:
 `$ python vagalume.py -h`

@@ -1,21 +1,21 @@
 # VAGALUME CRAWLER
----
+
 Python 3.5.3
-
+---
 ## Objetivo
----
-Crawler do site www.vagalume.com, apresenta uma lista de músicas baseada no artista que o usuário inserir ou a letra da música especificada pelo usuário,  também sendo possível exportá-las para um arquivo de texto.
 
-## Instalação
+Crawler do site www.vagalume.com, apresenta uma lista de músicas baseada no artista que o usuário inserir ou a letra da música especificada pelo usuário,  também sendo possível exportá-las para um arquivo de texto.
 ---
+## Instalação
+
 ```
 $ git clone https://github.com/lsantosdemoura/vagalume-crawler.git
 $ cd vagalume_crawler
 $ pip3 install -r requirements.txt
 ```
-
-## Uso
 ---
+## Uso
+
 Para retornar apenas as 15 primeiras músicas do TOP:
 
 ```
@@ -46,7 +46,7 @@ Caso deseje exportar para txt, é criado um arquivo com o nome do artista conten
 Deseja exportar para txt? (s/n):
 s
 ```
-
+---
 Para retornar um número especifico de músicas do TOP sendo no máximo 25:
 
 ```
@@ -70,7 +70,7 @@ Minne Duett
 Deseja exportar para txt? (s/n):
 n
 ```
-
+---
 Para retornar as músicas de um artista baseado na primeira letra do titulo:
 
 ```
@@ -83,7 +83,7 @@ Buscando por Mamonas Assassinas...
 Deseja exportar para txt? (s/n):
 n
 ```
-
+---
 Para retornar todas as músicas do artista:
 
 ```
@@ -111,12 +111,58 @@ Zwitter
 Deseja exportar para txt? (s/n):
 n
 ```
+---
+Para retornar a letra de uma música:
 
+```
+$ python vagalume.py 'elvis presley' -m 'love me tender'
+
+Buscando por Love Me Tender...
+
+Artista: Elvis-Presley
+Compositor: Elvis Presley / Vera Matson
+Titulo: Love Me Tender
+
+Letra:
+
+Love me tender, love me sweet,
+Never let me go.
+You have made my life complete,
+And I love you so.
+
+Love me tender, love me true,
+All my dreams fulfill.
+For my darlin' I love you,
+And I always will.
+
+Love me tender, love me long,
+Take me to your heart.
+For it's there that I belong,
+And we'll never part.
+
+Love me tender, love me true,
+All my dreams fulfill.
+For my darlin' I love you,
+And I always will.
+
+Love me tender, love me dear,
+Tell me you are mine.
+I'll be yours through all the years,
+Till the end of time.
+
+Love me tender, love me true,
+All my dreams fulfill.
+For my darlin' I love you,
+And I always will.
+
+Deseja exportar para txt? (s/n):
+n
+```
+---
 Help do programa:
 
 `$ python vagalume.py -h`
-
-
-## License
 ---
+## License
+
 This project is licensed under the MIT License - see [LICENSE](/LICENSE) for details.
